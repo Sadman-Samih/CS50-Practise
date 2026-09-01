@@ -3,5 +3,5 @@
 
 int main(void)
 {
-
+    get_int = "Enter Int "
 }
