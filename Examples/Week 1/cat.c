@@ -7,7 +7,7 @@ int main (void)
 
     while (true)
     {
-        nt n = get_int("How many meows? ");
+        int n = get_int("How many meows? ");
         if (n < 0)
         {
             printf("Please enter a non-negative number.\n");
@@ -31,4 +31,6 @@ do
         n = get_int("How many times do you want to hear meow? ");
     }
     while (n < 0);
-    */
+    *
+
+
