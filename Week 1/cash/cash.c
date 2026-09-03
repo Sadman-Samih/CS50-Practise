@@ -3,5 +3,21 @@
 
 int main(void)
 {
-    int cents = get_int("enter: ");
+    int cents;
+    do{
+        cents = get_int("Changes Owed: ");
+        }
+    while (cents < 0);
+
 }
+
+int calculate_quarters(int cents)
+{
+    int quarters = 0;
+    while (cents >= 25)
+    {
+        quarters++;
+        cents = cents - 25
+        }
+    return quarters;
+    }
