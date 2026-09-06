@@ -3,6 +3,8 @@
 
 int calculate_quarters(int cents);
 int calculate_dimes(int cents);
+int calculate_nickels(int cents);
+
 
 int main(void)
 {
@@ -29,6 +31,16 @@ int main(void)
 
     printf("Dimes %i\n", dimes);
     printf("Remaining cents %i\n", cents);
+
+    //Calculate the number of nickels
+    int nickels = calculate_nickels(cents);
+
+    //Subtract nickels from cents
+    cents = cents - (nickels * 5);
+
+    printf("Dimes %i\n", dimes);
+    printf("Remaining cents %i\n", cents);
+
 }
 
 int calculate_quarters(int cents)
@@ -51,5 +63,17 @@ int calculate_dimes(int cents)
         cents = cents - 10;
         }
     return dimes;
+    }
+
+int calculate_nickels(int cents)
+{
+    int nickels = 0;
+    while (cents >= 5)
+    {
+        nickels ++;
+        cents = cents - 5;
+
+        }
+    return nickels;
     }
 
