@@ -1,15 +1,10 @@
 #include <stdio.h>
+#include <string.h>
 #include <cs50.h>
 
 int main(void)
 {
     string name = get_string("name: ");
-
-    int n = 0;
-    while (name[n] != '\0')
-    {
-        n++;
-    }
-
-    printf("%i\n", n);
+    int length = strlen(name);
+    printf("%i\n", length);
 }
