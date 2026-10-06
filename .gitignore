@@ -1,3 +1,4 @@
+# Compiled files
 *.o
 *.obj
 *.out
@@ -7,6 +8,22 @@
 *.dll
 *.dylib
 
+# Python generated files
+__pycache__/
+*.py[cod]
 
-# Common Linux/WSL executable
-a.out
+# Build directories
+build/
+bin/
+dist/
+
+# Ignore extensionless files (such as executables made by `make`)
+*
+!*/
+!*.*
+!.gitignore
+
+# Allow important extensionless project files
+!Makefile
+!README
+!LICENSE
