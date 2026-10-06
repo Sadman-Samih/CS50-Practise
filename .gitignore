@@ -6,3 +6,7 @@
 *.so
 *.dll
 *.dylib
+
+
+# Common Linux/WSL executable
+a.out
